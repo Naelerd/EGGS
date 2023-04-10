@@ -6,28 +6,27 @@ package EjerciciosPracticos.Guia2.EXTRAS;
 import java.util.Scanner;
 
 public class Ejercicio8 {
+
     public static void main(String[] args) {
-        
+
         Scanner teclado = new Scanner(System.in).useDelimiter("\n");
         int num, contador = 0, pares = 0, impares = 0;
-        
-        
-        
-        do{
-        System.out.println("Ingrese un numero.");
-        num = teclado.nextInt();
-        contador++;
-           if(num > 0){
-               if(num % 2 == 0){
-                  pares++;
+
+        do {
+            System.out.println("Ingrese un numero.");
+            num = teclado.nextInt();
+            contador++;
+            if (num > 0) {
+                if (num % 2 == 0) {
+                    pares++;
                 } else {
-                  impares++;
+                    impares++;
                 }
             }
-        }while(num % 5 != 0);
-        
+        } while (num % 5 != 0);
+
         System.out.println("Cantidad de numeros ingresados es de: " + contador);
         System.out.println("La cantidad de numeros PARES es de: " + pares);
         System.out.println("La cantidad de numeros IMPARES es de: " + impares);
-    }
+    } 
 }
